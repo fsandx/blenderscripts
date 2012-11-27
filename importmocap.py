@@ -4,10 +4,6 @@
 import bpy
 import os
 
-context = bpy.context
-scene = context.scene
-object = context.object
-
 fileName = "faceshift_mocap.txt"
 path = os.getcwd()
 
@@ -38,7 +34,10 @@ def getShapekeyFrames(framesData):
 
 
 def addKeyFramesAndProperties(shapekeyFrames):
+    context = bpy.context
+    object = context.object
     frameNumber = 1
+
     for frameList in shapekeyFrames:
         for (idx, value) in enumerate(frameList):
             # get all the id property names of the object that start with index (0 padded 2 digits) underscore.

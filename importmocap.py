@@ -7,7 +7,6 @@ import os
 fileName = "faceshift_mocap.txt"
 path = os.getcwd()
 
-
 def getFileData(file):
     fileObj = open(fileName, "r")
     fileStr = fileObj.read()
@@ -57,3 +56,5 @@ def main():
     shapekeyFrames = getShapekeyFrames(fileData)
     addKeyFramesAndProperties(shapekeyFrames)
 
+
+main()

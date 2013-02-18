@@ -1,6 +1,6 @@
 import bpy
 
-DATA_FILE = "C:\\Users\\Carolina\\Desktop\\mocapdata.tsv"
+DATA_FILE = "MY_FILE.tsv"
 markerNames = []
 markers = []
 isMarkersRead = False
